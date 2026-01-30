@@ -1,9 +1,14 @@
 import streamlit as st
 import pandas as pd
-import psycopg2
 import os
 import time
 from dotenv import load_dotenv
+
+# Robust Import for Cloud
+try:
+    import psycopg2
+except ImportError:
+    psycopg2 = None
 
 # Load env vars
 load_dotenv()
@@ -20,6 +25,8 @@ st.title("🤖 Tesla Optimus Production Line: Real-Time Telemetry")
 # Database Connection
 @st.cache_resource
 def get_database_connection():
+    if psycopg2 is None:
+        return None
     db_url = os.getenv("DATABASE_URL")
     if not db_url:
         return None
