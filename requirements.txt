@@ -5,3 +5,4 @@ streamlit
 numpy
 altair<5
 standard-imghdr
+pyarrow<15
