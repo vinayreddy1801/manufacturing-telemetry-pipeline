@@ -1,4 +1,6 @@
 streamlit>=1.36.0
 python-dotenv
 numpy
+psycopg2-binary
+pandas
 standard-imghdr
