@@ -4,3 +4,4 @@ python-dotenv
 streamlit
 numpy
 standard-imghdr
+altair<5
