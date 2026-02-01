@@ -31,8 +31,9 @@ def get_database_connection():
     if not db_url:
         return None
     try:
-        return psycopg2.connect(db_url)
-    except:
+        # TIMEOUT: Fail fast (3s) if DB is unreachable (e.g. firewall issues)
+        return psycopg2.connect(db_url, connect_timeout=3)
+    except Exception as e:
         return None
 
 conn = get_database_connection()
