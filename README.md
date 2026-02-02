@@ -1,7 +1,7 @@
 # 🏭 Industrial IoT Event-Driven Telemetry Pipeline
 *(Simulated Manufacturing Telemetry Pipeline)*
 
-![Status](https://img.shields.io/badge/Status-Operational-brightgreen) ![Python](https://img.shields.io/badge/Python-3.9%2B-blue) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Supabase-blue) ![Docker](https://img.shields.io/badge/Docker-Containerized-blue) ![CI/CD](https://img.shields.io/badge/GitHub-Actions-orange)
+![Status](https://img.shields.io/badge/Status-Operational-brightgreen) [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://manufacturing-telemetry-pipeline-4w4vdqqcqswwtjyhctzsyb.streamlit.app/) ![Python](https://img.shields.io/badge/Python-3.9%2B-blue) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Supabase-blue) ![Docker](https://img.shields.io/badge/Docker-Containerized-blue) ![CI/CD](https://img.shields.io/badge/GitHub-Actions-orange)
 
 ## 📌 Project Overview
 This project is a **scalable, event-driven data pipeline** designed to bridge the gap between manufacturing hardware (PLCs, Dyno Testers) and real-time operational analytics. 
