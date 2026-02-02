@@ -13,6 +13,7 @@ This guide is tailored specifically for the **Software Engineer, Optimus** role 
 *   "Built a **fault-tolerant monitoring system** ('Sentinel') that automates infrastructure health checks and alerts on thermal anomalies, reducing detection time to <200ms."
 *   "Optimized **query performance** for mass-manufacturing dashboards by implementing compound B-Tree indexing on time-series data, enabling sub-second retrieval of millions of rows."
 *   "Deployed a real-time **Manufacturing Command Center** using Streamlit, featuring automated fallback to simulation mode to ensure 100% dashboard uptime during network partitions."
+*   "Containerized the entire ETL and Visualization pipeline using **Docker & Docker Compose**, ensuring identical runtime environments from 'Dev' to 'Production' (GitOps)."
 
 ---
 

@@ -1,7 +1,7 @@
 # 🏭 Industrial IoT Event-Driven Telemetry Pipeline
 *(Formerly: Tesla Optimus Streaming Pipeline)*
 
-![Status](https://img.shields.io/badge/Status-Operational-brightgreen) ![Python](https://img.shields.io/badge/Python-3.9%2B-blue) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Supabase-blue) ![CI/CD](https://img.shields.io/badge/GitHub-Actions-orange)
+![Status](https://img.shields.io/badge/Status-Operational-brightgreen) ![Python](https://img.shields.io/badge/Python-3.9%2B-blue) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Supabase-blue) ![Docker](https://img.shields.io/badge/Docker-Containerized-blue) ![CI/CD](https://img.shields.io/badge/GitHub-Actions-orange)
 
 ## 📌 Project Overview
 This project is a **scalable, event-driven data pipeline** designed to bridge the gap between manufacturing hardware (PLCs, Dyno Testers) and real-time operational analytics. 
@@ -80,7 +80,16 @@ Create a `.env` file based on `.env.example` and add your connection string:
 DATABASE_URL=postgresql://user:pass@host:5432/db
 ```
 
-### 3. Run the Pipeline
+### 3. Run with Docker (Recommended for Reliability)
+If you have Docker installed, you can spin up the entire pipeline in seconds without configuring Python:
+
+```bash
+# Build and Run
+docker-compose up --build
+```
+*Access the dashboard at `http://localhost:8501`*
+
+### 4. Run Locally (Manual)
 ```bash
 # Start the Dyno/PLC Simulator
 python src/ingestor.py

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  # Manufacturing Command Center Service
+  optimus-pipeline:
+    build: .
+    container_name: factory-dashboard
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    restart: always
+    volumes:
+      - .:/app  # Hot-reloading for development
+    command: streamlit run src/dashboard.py --server.port=8501 --server.address=0.0.0.0
